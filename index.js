@@ -58,7 +58,7 @@ app.post('/addNew', (req, res) => {
 app.post('/totalVotes', (req, res) => {
     // console.log(req.body.studentid);
     if(voters.has(req.body.studentid)) {
-        res.render('Vote', {candidate: candidates, message: "Already Voted."});
+        res.render('Vote', {candidate: candidates, message: "You have already voted!"});
     }
     else {
         voters.add(req.body.studentid);
@@ -67,7 +67,7 @@ app.post('/totalVotes', (req, res) => {
                 candidates[i].votes++;
             }
         }
-        res.render('Vote', {candidate: candidates, message: "You voted successfully"});
+        res.render('Vote', {candidate: candidates, message: "Your vote has been recorded successfully"});
     }
 });
 
