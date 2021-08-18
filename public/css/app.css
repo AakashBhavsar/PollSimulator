@@ -1,0 +1,17 @@
+.center {
+    width: 50%;
+    padding: 2% 5% 2% 5%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.table_center {
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.link_button {
+    margin-left: 50%;
+}
